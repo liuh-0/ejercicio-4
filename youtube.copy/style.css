@@ -1,0 +1,493 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: montserrat;
+  background-color: #0f0f0f;
+}
+
+header{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0px 16px;
+ height: 56px;
+}
+ 
+/*lOGO*/
+
+.logo{
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-left: 28px ;
+  gap: 20px;
+  cursor: pointer;
+  font-size: 10px;
+  padding-left: 0;
+}
+
+
+.button-menu{
+  color: white;
+  background-color: transparent;
+  border-radius: 40px;
+  border: none;
+  padding: 16px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Barra de busqueda */
+
+.search-form {
+  display: none
+}
+
+/* menu usuario */
+
+.user-menu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-button-movile{
+  background-color: transparent;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plus{
+    color: white;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 40px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  gap: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+}
+
+.btn-plus{
+  display: none;
+}
+
+.notification{
+  display: none;
+}
+.user{
+  color: white;
+  background-color: transparent;
+  border-radius: 40px;
+  border: none;
+  width: 40px;
+  height: 40px;
+}
+
+.notification:hover, .plus:hover, .user:hover, .button-menu:hover{
+  background-color: #272727;
+}
+
+/* HEADER PC*/
+
+@media only screen and (min-width: 768px){
+  header{
+    display: grid; 
+    grid-template-columns: 200px 1fr 225px;
+    align-items: center;
+  }
+  
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px; 
+}
+
+.container-form{
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding-top: 0px;
+}
+
+.search-input {
+  width: 550px;
+  height: 40px;
+  padding: 8px 16px; 
+  background-color: transparent;
+  color: white;
+  border: 1px solid  #303030;
+  border-right: none; 
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.search-button {
+  background-color: #303030;
+  color: white;
+  cursor: pointer;
+  width: 60px; 
+  height: 40px;
+  border: 1px solid  #303030;
+  border-left: none;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-sizing: border-box; 
+}
+
+.voice-search{
+  background-color: #303030;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  
+  .logo{
+    gap: 8px;
+  }
+
+  .user-menu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-button-movile{
+  display: none;
+}
+
+.plus{
+  color: white;
+  width: auto;
+  height: 40px;
+  background-color: #303030;
+  border-radius: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.btn-plus{
+  display: flex;
+}
+
+.notification{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.user{
+  color: white;
+  background-color: transparent;
+  border-radius: 40px;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.notification:hover, .plus:hover, .user:hover, .button-menu:hover{
+  background-color: #272727;
+}
+}
+
+/* BARRA DE FILTROS TELEFONO */
+
+#btn-carrusel{
+  margin-top: 10px;
+}
+
+.contenedor-carrusel{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 12px;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  padding: 6px 22px;
+}
+
+.tag{
+  width: auto;
+  height: auto;
+  background-color: #272727;
+  color: white;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 550;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}  
+
+
+.tag-active{
+  width: auto;
+  height: auto;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 550;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+
+/*BARRA DE FILTROS PC*/
+
+
+@media only screen and (min-width: 768px) {
+  #btn-carrusel{
+    display: flex;
+    margin-left: 96px;
+  }
+
+  .contenedor-carrusel{
+    padding: 12px 0px;
+  }
+}
+
+/*BARRA LATERAL IZQUIERDA TELEFONO*/
+
+#barra-izquierda{
+  display: none;
+}
+
+/*RESPONSIVE DE LA BARRA LATERAL PC*/
+
+@media only screen and (min-width: 768px){
+  #barra-izquierda{
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  position: fixed;
+  top: 58px;
+  left: 0;
+  width: 72px;
+  height: 100vh;
+  padding-top: 12px;
+  background-color: #0f0f0f;
+}
+
+.barra-lateral{
+  padding-top: 0px;
+  padding-right: 10px;
+}
+
+.btn-lateral{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 75px;
+  background-color: #0f0f0f;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+}
+
+.btn-lateral:hover{
+  background-color: #272727;
+}
+
+.logo-lateral{
+  color: white;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+.txt-lateral{
+  margin-top: 10px;
+  font-size: 10px;
+  overflow-wrap: break-word;
+  word-break: break-word;    
+  line-height: 1.1;
+  color: white;
+}
+}
+
+/* CONTENEDORES DE VIDEO TELEFONO*/
+
+#video-yt{
+  margin-left: 12px;
+  margin-right: 0px;
+}
+
+.grid-videos{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    margin-right: 6px;
+}
+
+.contenedor-videos{
+  padding: 6px;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  transition: background-color 0.8s ease, box-shadow 0,8s;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.contenedor-videos::before {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1a1a1a; 
+  border-radius: 12px;
+  opacity: 0; 
+  transform: scale(1); 
+  transition: transform 0.2s ease-out, opacity 0.1s ease-out; 
+  z-index: -1;
+}
+
+.contenedor-videos:hover {
+  z-index: 10; 
+}
+
+.contenedor-videos:hover::before {
+  opacity: 1;
+  transform: scale(1.06); 
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5); 
+}
+
+.miniatura{
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.miniatura img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.info-miniatura{
+  display: flex;
+  align-items: flex-start;
+  margin-top: 12px;
+  gap: 12px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #555; 
+  flex-shrink: 0;
+}
+
+.detalles-video {
+  flex-grow: 1; 
+}
+
+.txt-videos{
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.txt-videos h3,
+.txt-videos p{
+  margin: 0;
+  font-size: 15px;
+}
+
+.btn-opcions{
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-radius: 40px;
+  height: 40px;
+  width:40px ;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.btn-opcions:hover{
+  background-color: #272727 ;
+}
+
+
+  /*CONTENEDOR DE VIDEO PC*/
+
+  @media only screen and (min-width: 768px){
+    #videos-yt{
+      margin-left: 100px;
+    }
+
+  .grid-videos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-left: 100px;
+    margin-right: 20px;
+  }
+  }
