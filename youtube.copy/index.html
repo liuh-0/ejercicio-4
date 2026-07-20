@@ -1,215 +1,266 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Youtube</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <button class="button-menu"><i class="fas fa-bars"></i></button>
-      <h1>YouTube</h1>
-    </div>
-   <form class="search-form">
-    <div class="container-form">
-      <input type="text" placeholder="Buscar" class="search-input">
-      <button type="summit" class="search-button">
-        <i class="fas fa-search"></i>
-      </button>
-    </div>
-    <button type="button" class="voice-search">
-    <i class="fas fa-microphone"></i>
-    </button>
-   </form>
-    <nav class="user-menu">
-       <button type="summit" class="search-button-movile">
-        <i class="fas fa-search"></i>
-      </button>
-      <button class="plus">
-        <i class="fas fa-plus"></i>
-        <span class="btn-plus">Crear</span>
-      </button>
-      <button class="notification"><i class="fas fa-bell"></i></button>
-      <button class="user"><i class="fas fa-user"></i></button>
-    </nav>
-  </header>
-  <main>
-    <section id="btn-carrusel">
-      <nav class="contenedor-carrusel">
-        <button class="tag-active">Todo</buttonclass>
-        <button class="tag">Videojuegos</buttonclass>
-        <button class="tag">MateFacil</buttonclass>
-        <button class="tag">German Garmendia</buttonclass>
-        <button class="tag">Five Nights at Freddy's</buttonclass>
-        <button class="tag">Mixes</buttonclass>
-        <button class="tag">En directo</buttonclass>
-        <button class="tag">Meccha Chameleon</buttonclass>
-        <button class="tag">Origami</buttonclass>
-        <button class="tag">Musica</buttonclass>
-        <button class="tag">Mix</buttonclass>
-        <button class="tag">Mod</buttonclass>
-        <button class="tag">integrales</buttonclass>
-        <button class="tag">Minecraft</buttonclass>
-        <button class="tag">Postres</buttonclass>
-        <button class="tag">Croche</buttonclass>
-        <button class="tag">Subidas recientes</buttonclass>
-        <button class="tag">Vistos</buttonclass>
-        <button class="tag">Novedades para ti</buttonclass>
-    </section>
-    <section id="barra-izquierda">
-      <nav class="barra-lateral">
-        <button class="btn-lateral">
-          <span class="logo-lateral"><i class="fas fa-house"></i></span>
-          <span class="txt-lateral">Inicio</span>
-        </button>
-        <button class="btn-lateral">
-          <span class="logo-lateral"><i class="fa-brands fa-youtube"></i></i></span>
-          <span class="txt-lateral">Shorts</span>
-        </button> 
-        <button class="btn-lateral">
-          <span class="logo-lateral"><i class="fa-brands fa-square-youtube"></i></i></span>
-          <span class="txt-lateral">Subcripciones</span>
-        </button>
-        <button class="btn-lateral">
-          <span class="logo-lateral"><i class="fa-regular fa-circle-user"></i></span>
-          <span class="txt-lateral">Tu</span>
-        </button>
-      </nav>
-    </section>
-    <section id="video-yt">
-      <div class="grid-videos">
-        <article class="contenedor-videos">
-          <div class="miniatura">
-            <img src="https://img.youtube.com/vi/RdPchN3yzKE/maxresdefault.jpg" alt="miniatura">
-            <span class="tiempo-video">25:44</span>
-          </div>
-         <div class="info-miniatura">
-            <div class="avatar">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1pd84IEwhDhctIARwi_Ms_q-P0keb0J0uMZg24VLIZg&s=10" class="avatar">
-            </div>
-            <div class="detalles-video">
-              <div class="txt-videos">
-              <h3>TENGO QUE DRENAR EL LAGO</h3>
-              <p class="nombre-del-canal">JuegaGerman</p>
-              <p class="vistas">149 K visualizaciones</p>
-              </div>
-            </div>
-            <button class="btn-opcions">
-              <i class="fa-solid fa-ellipsis-vertical"></i>
-            </button>
-         </div>
-        </article>
-        <article class="contenedor-videos">
-          <div class="miniatura">
-            <img src="https://img.youtube.com/vi/D-3NhkabEAM/maxresdefault.jpg">
-            <span class="tiempo-video">25:44</span>
-          </div>
-         <div class="info-miniatura">
-            <div class="avatar">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLfnEl8PrUbhgIP0k96z2Eqa5TdZJIthbxSB34lyYc2g&s" class="avatar">
-            </div>
-            <div class="detalles-video">
-              <div class="txt-videos">
-              <h3>MIS AMIGOS SE ESCONDIERON DEMASIADO BIEN 😭 | MECCHA CHAMELEON</h3>
-              <p class="nombre-del-canal">ElMariana Gaming</p>
-              <p class="vistas">391 K visualizaciones • hace 18 horas</p>
-              </div>
-            </div>
-            <button class="btn-opcions">
-              <i class="fa-solid fa-ellipsis-vertical"></i>
-            </button>
-         </div>
-        </article>
-        <article class="contenedor-videos">
-          <div class="miniatura">
-            <img src="https://img.youtube.com/vi/_pRjohASA5c/maxresdefault.jpg">
-            <span class="tiempo-video">25:44</span>
-          </div>
-         <div class="info-miniatura">
-            <div class="avatar">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2KLMVOU6VkNWD6Mm4E0qcL-Nq4nirKfyfq407EBGe5w&s" class="avatar">
-            </div>
-            <div class="detalles-video">
-              <div class="txt-videos">
-              <h3>NUNCA LIMPIES TU CASA DE NOCHE</h3>
-              <p class="nombre-del-canal">RobleisJAJA</p>
-              <p class="vistas">182 K visualizaciones • hace 1 día</p>
-              </div>
-            </div>
-            <button class="btn-opcions">
-              <i class="fa-solid fa-ellipsis-vertical"></i>
-            </button>
-         </div>
-        </article>
-        <article class="contenedor-videos">
-          <div class="miniatura">
-            <img src="https://img.youtube.com/vi/C637UcpHfNY/maxresdefault.jpg">
-            <span class="tiempo-video">25:44</span>
-          </div>
-         <div class="info-miniatura">
-            <div class="avatar">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcALO2xqSWcF6m-qzTH-WbHVUUDLTSvlAtSdK3d82g0A&s=10" class="avatar">
-            </div>
-            <div class="detalles-video">
-              <div class="txt-videos">
-              <h3>Animation vs. Geometry Dash</h3>
-              <p class="nombre-del-canal">Alan Becker</p>
-              <p class="vistas">852 K visualizaciones • hace 19 horas</p>
-              </div>
-            </div>
-             <button class="btn-opcions">
-              <i class="fa-solid fa-ellipsis-vertical"></i>
-            </button>
-         </div>
-        </article>
-        <article class="contenedor-videos">
-          <div class="miniatura">
-            <img src="https://img.youtube.com/vi/NiatoTa2Xfw/hqdefault.jpg">
-            <span class="tiempo-video">25:44</span>
-          </div>
-         <div class="info-miniatura">
-            <div class="avatar">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRduc4FTMaAekpH3glzPiNv144IiwD2y5ObOOwcdfJkBQ&s=10" class="avatar">
-            </div>
-            <div class="detalles-video">
-              <div class="txt-videos">
-              <h3>Analizando LA PELÍCULA BASURA MÁS CARA DEL MUNDO?! – FOODFIGHT!</h3>
-              <p class="nombre-del-canal">MissaSinfonia</p>
-              <p class="vistas">4.9 M visualizaciones • hace 2 semanas</p>
-              </div>
-            </div>
-            <button class="btn-opcions">
-              <i class="fa-solid fa-ellipsis-vertical"></i>
-            </button>
-         </div>
-        </article>
-        <article class="contenedor-videos">
-          <div class="miniatura">
-            <img src="https://img.youtube.com/vi/8kEz2DSH9BA/maxresdefault.jpg">
-            <span class="tiempo-video">25:44</span>
-          </div>
-         <div class="info-miniatura">
-            <div class="avatar">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRbxfJ0wF0-Eplo3eqg5AMt42X3Ve5zf4-ZmatfIrQig&s=10" class="avatar">
-            </div>
-            <div class="detalles-video">
-              <div class="txt-videos">
-              <h3>168. Transformada de Laplace: ¿qué es?. Definición, explicación y primer ejemplo</h3>
-              <p class="nombre-del-canal">MateFacil</p>
-              <p class="vistas">1.8 M visualizaciones • hace 9 años</p>
-              </div>
-            </div>
-            <button class="btn-opcions">
-              <i class="fa-solid fa-ellipsis-vertical"></i>
-            </button>
-         </div>
-        </article>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <button class="button-menu"><i class="fas fa-bars"></i></button>
+        <h1>YouTube</h1>
       </div>
-    </section>
-  </main>
-</body>
+      <form class="search-form">
+        <div class="container-form">
+          <input type="text" placeholder="Buscar" class="search-input" />
+          <button type="summit" class="search-button">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <button type="button" class="voice-search">
+          <i class="fas fa-microphone"></i>
+        </button>
+      </form>
+      <nav class="user-menu">
+        <button type="summit" class="search-button-movile">
+          <i class="fas fa-search"></i>
+        </button>
+        <button class="plus">
+          <i class="fas fa-plus"></i>
+          <span class="btn-plus">Crear</span>
+        </button>
+        <button class="notification"><i class="fas fa-bell"></i></button>
+        <button class="user"><i class="fas fa-user"></i></button>
+      </nav>
+    </header>
+    <main>
+      <section id="btn-carrusel">
+        <nav class="contenedor-carrusel">
+          <button class="tag-active">Todo</button>
+          <button class="tag">Videojuegos</button>
+          <button class="tag">MateFacil</button>
+          <button class="tag">German Garmendia</button>
+          <button class="tag">Five Nights at Freddy's</button>
+          <button class="tag">Mixes</button>
+          <button class="tag">En directo</button>
+          <button class="tag">Meccha Chameleon</button>
+          <button class="tag">Origami</button>
+          <button class="tag">Musica</button>
+          <button class="tag">Mix</button>
+          <button class="tag">Mod</button>
+          <button class="tag">integrales</button>
+          <button class="tag">Minecraft</button>
+          <button class="tag">Postres</button>
+          <button class="tag">Croche</button>
+          <button class="tag">Subidas recientes</button>
+          <button class="tag">Vistos</button>
+          <button class="tag">Novedades para ti</button>
+        </nav>
+      </section>
+      <section id="barra-izquierda">
+        <nav class="barra-lateral">
+          <button class="btn-lateral">
+            <span class="logo-lateral"><i class="fas fa-house"></i></span>
+            <span class="txt-lateral">Inicio</span>
+          </button>
+          <button class="btn-lateral">
+            <span class="logo-lateral"
+              ><i class="fa-brands fa-youtube"></i
+            ></span>
+            <span class="txt-lateral">Shorts</span>
+          </button>
+          <button class="btn-lateral">
+            <span class="logo-lateral"
+              ><i class="fa-brands fa-square-youtube"></i
+            ></span>
+            <span class="txt-lateral">Subcripciones</span>
+          </button>
+          <button class="btn-lateral">
+            <span class="logo-lateral"
+              ><i class="fa-regular fa-circle-user"></i
+            ></span>
+            <span class="txt-lateral">Tu</span>
+          </button>
+        </nav>
+      </section>
+      <section id="video-yt">
+        <div class="grid-videos">
+          <article class="contenedor-videos">
+            <div class="miniatura">
+              <img
+                src="https://img.youtube.com/vi/RdPchN3yzKE/maxresdefault.jpg"
+                alt="miniatura"
+              />
+              <span class="tiempo-video">25:44</span>
+            </div>
+            <div class="info-miniatura">
+              <div class="avatar">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1pd84IEwhDhctIARwi_Ms_q-P0keb0J0uMZg24VLIZg&s=10"
+                  class="avatar"
+                />
+              </div>
+              <div class="detalles-video">
+                <div class="txt-videos">
+                  <h3>TENGO QUE DRENAR EL LAGO</h3>
+                  <p class="nombre-del-canal">JuegaGerman</p>
+                  <p class="vistas">149 K visualizaciones</p>
+                </div>
+              </div>
+              <button class="btn-opcions">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </div>
+          </article>
+          <article class="contenedor-videos">
+            <div class="miniatura">
+              <img
+                src="https://img.youtube.com/vi/D-3NhkabEAM/maxresdefault.jpg"
+              />
+              <span class="tiempo-video">25:44</span>
+            </div>
+            <div class="info-miniatura">
+              <div class="avatar">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLfnEl8PrUbhgIP0k96z2Eqa5TdZJIthbxSB34lyYc2g&s"
+                  class="avatar"
+                />
+              </div>
+              <div class="detalles-video">
+                <div class="txt-videos">
+                  <h3>
+                    MIS AMIGOS SE ESCONDIERON DEMASIADO BIEN 😭 | MECCHA
+                    CHAMELEON
+                  </h3>
+                  <p class="nombre-del-canal">ElMariana Gaming</p>
+                  <p class="vistas">391 K visualizaciones • hace 18 horas</p>
+                </div>
+              </div>
+              <button class="btn-opcions">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </div>
+          </article>
+          <article class="contenedor-videos">
+            <div class="miniatura">
+              <img
+                src="https://img.youtube.com/vi/_pRjohASA5c/maxresdefault.jpg"
+              />
+              <span class="tiempo-video">25:44</span>
+            </div>
+            <div class="info-miniatura">
+              <div class="avatar">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2KLMVOU6VkNWD6Mm4E0qcL-Nq4nirKfyfq407EBGe5w&s"
+                  class="avatar"
+                />
+              </div>
+              <div class="detalles-video">
+                <div class="txt-videos">
+                  <h3>NUNCA LIMPIES TU CASA DE NOCHE</h3>
+                  <p class="nombre-del-canal">RobleisJAJA</p>
+                  <p class="vistas">182 K visualizaciones • hace 1 día</p>
+                </div>
+              </div>
+              <button class="btn-opcions">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </div>
+          </article>
+          <article class="contenedor-videos">
+            <div class="miniatura">
+              <img
+                src="https://img.youtube.com/vi/C637UcpHfNY/maxresdefault.jpg"
+              />
+              <span class="tiempo-video">25:44</span>
+            </div>
+            <div class="info-miniatura">
+              <div class="avatar">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcALO2xqSWcF6m-qzTH-WbHVUUDLTSvlAtSdK3d82g0A&s=10"
+                  class="avatar"
+                />
+              </div>
+              <div class="detalles-video">
+                <div class="txt-videos">
+                  <h3>Animation vs. Geometry Dash</h3>
+                  <p class="nombre-del-canal">Alan Becker</p>
+                  <p class="vistas">852 K visualizaciones • hace 19 horas</p>
+                </div>
+              </div>
+              <button class="btn-opcions">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </div>
+          </article>
+          <article class="contenedor-videos">
+            <div class="miniatura">
+              <img src="https://img.youtube.com/vi/NiatoTa2Xfw/hqdefault.jpg" />
+              <span class="tiempo-video">25:44</span>
+            </div>
+            <div class="info-miniatura">
+              <div class="avatar">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRduc4FTMaAekpH3glzPiNv144IiwD2y5ObOOwcdfJkBQ&s=10"
+                  class="avatar"
+                />
+              </div>
+              <div class="detalles-video">
+                <div class="txt-videos">
+                  <h3>
+                    Analizando LA PELÍCULA BASURA MÁS CARA DEL MUNDO?! –
+                    FOODFIGHT!
+                  </h3>
+                  <p class="nombre-del-canal">MissaSinfonia</p>
+                  <p class="vistas">4.9 M visualizaciones • hace 2 semanas</p>
+                </div>
+              </div>
+              <button class="btn-opcions">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </div>
+          </article>
+          <article class="contenedor-videos">
+            <div class="miniatura">
+              <img
+                src="https://img.youtube.com/vi/8kEz2DSH9BA/maxresdefault.jpg"
+              />
+              <span class="tiempo-video">25:44</span>
+            </div>
+            <div class="info-miniatura">
+              <div class="avatar">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRbxfJ0wF0-Eplo3eqg5AMt42X3Ve5zf4-ZmatfIrQig&s=10"
+                  class="avatar"
+                />
+              </div>
+              <div class="detalles-video">
+                <div class="txt-videos">
+                  <h3>
+                    168. Transformada de Laplace: ¿qué es?. Definición,
+                    explicación y primer ejemplo
+                  </h3>
+                  <p class="nombre-del-canal">MateFacil</p>
+                  <p class="vistas">1.8 M visualizaciones • hace 9 años</p>
+                </div>
+              </div>
+              <button class="btn-opcions">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
